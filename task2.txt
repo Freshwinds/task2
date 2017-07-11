@@ -1,16 +1,17 @@
 1.建立商品类(2min)
-input：Barcode(string)，Name(string),Unit(string),Price(Number),Count(Number)
-
+input：
+      成员:Barcode(string)，Name(string),Unit(string),Price(Number),Count(Number)
+      函数：getBarcode(),getName(),getUnit(),getPrice(),getCOunt();
 output:items：{barcode:Barcode,name:Name,unit:Unit,price:Price,count:Count};
 
 2.建立小计数组(2min)
 input:[items]
-output:sum:[{items.Name:item_sum}](item_sum=items.Count*items.price)
+output:sum_items:[{items.Name:item_sum}](item_sum=items.Count*items.price)
 
 3.计算总计(1min)
 input:sum
 output:all_sum:Number
 
 4.输出清单内容(5min)
-input:[items],sum,,all_sum
+input:[items],sum_items,,all_sum
 output:String:清单内容
